@@ -3,10 +3,12 @@ import { useState } from 'react';
 
 import HomeImage from '../../../asset/image/Home1_desktop.png';
 import ContactUsModal from '../../modals/ContactUs';
+import ConfirmModal from '../../modals/confirm';
 
 export default function LookingFor() {
 
     const [ open, setOpen ] = useState(false);
+    const [ openConfirm, setOpenConfirm ] = useState(false);
 
     const onContactUsClicked = () => {
         setOpen(true);
@@ -18,6 +20,15 @@ export default function LookingFor() {
 
     const onConfirm = () => {
         setOpen(false);
+        setOpenConfirm(true);
+    }
+
+    const onCloseConfirm = () => {
+        setOpenConfirm(false);
+    }
+
+    const onOkConform = () => {
+        setOpenConfirm(false);
     }
 
     return (
@@ -47,6 +58,7 @@ export default function LookingFor() {
             </div>
 
             <ContactUsModal open={open} onClose={onClose} onConfirm={onConfirm} />
+            <ConfirmModal open={openConfirm} onClose={onCloseConfirm} onConfirm={onOkConform} />
       </div>
     )
 }

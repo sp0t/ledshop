@@ -1,9 +1,12 @@
 
 
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import ConfirmModal from '../../modals/confirm'
 
 export default function Fakedoor() {
+
+    const navigate = useNavigate();
 
     const containerStyle = {
         backgroundImage: `url(${require('../../../asset/image/fakedoor_background.png')})`, 
@@ -25,10 +28,12 @@ export default function Fakedoor() {
 
     const onClose = () => {
         setOpen(false);
+        navigate("/");
     }
 
     const onConfirm = () => {
         setOpen(false);
+        navigate("/");
     }
 
     return (

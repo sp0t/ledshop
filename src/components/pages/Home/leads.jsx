@@ -8,7 +8,7 @@ import Data from '../../../asset/image/data.png';
 export default function Leads() {
 
     return (
-        <div className='my-[40px]'>
+        <div className='my-[40px] flex flex-col justify-center items-center'>
             <div className='font-semibold text-[64px] text-center text-[#4D4D4D] leading-[75px]'>
                 <div className='block md:flex md:gap-5 md:justify-center'>
                     <div>And this is </div>
@@ -26,8 +26,8 @@ export default function Leads() {
                 We are fully concerned on giving you only what fits you
             </div>
 
-            <div className="flex flex-col justify-center items-center gap-4 md:flex-row md:justify-between md:max-w-[1440px] md:px-[144px] mt-8">
-                <div className="shadow-md rounded-[8px] max-w-[299px] py-[24px] px-[32px] flex justify-center flex-col text-center items-center gap-[8px]">
+            <div className="flex flex-col justify-center items-center gap-4 md:flex-row md:justify-between md:items-end md:max-w-[1440px] md:w-[1440px] md:px-[144px] mt-8">
+                <div className="shadow-md rounded-[8px] max-w-[330px] w-[330px] py-[24px] px-[32px] flex justify-center flex-col text-center items-center gap-[8px]">
                     <img src={Lead} className='w-[65px] h-[56px]' />
                     <div className='flex flex-col text-[28px] text-center text-[#4D4D4D] leading-[36px] font-semibold '>
                         <div>Qualified and</div>
@@ -40,7 +40,7 @@ export default function Leads() {
                     </div>
                 </div>
 
-                <div className="shadow-md rounded-[8px] max-w-[299px] py-[24px] px-[32px] flex justify-center flex-col text-center items-center gap-[8px]">
+                <div className="shadow-md rounded-[8px] max-w-[330px] w-[330px] py-[24px] px-[32px] flex justify-center flex-col text-center items-center gap-[8px]">
                     <img src={Market} className='w-[65px] h-[56px]' />
                     <div className='flex flex-col text-[28px] text-center text-[#4D4D4D] leading-[36px] font-semibold '>
                         <div>Acess to New</div>
@@ -52,7 +52,7 @@ export default function Leads() {
                     </div>
                 </div>
 
-                <div className="shadow-md rounded-[8px] max-w-[299px] py-[24px] px-[32px] flex justify-center flex-col text-center items-center gap-[8px]">
+                <div className="shadow-md rounded-[8px] max-w-[330px] w-[330px] py-[24px] px-[32px] flex justify-center flex-col text-center items-center gap-[8px]">
                     <img src={Data} className='w-[65px] h-[56px]' />
                     <div className='flex flex-col text-[28px] text-center text-[#4D4D4D] leading-[36px] font-semibold '>
                         <div>Data</div>
