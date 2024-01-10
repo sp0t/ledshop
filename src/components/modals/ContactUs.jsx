@@ -1,10 +1,19 @@
-import { Fragment } from 'react';
 import { Dialog } from '@headlessui/react';
 
 import Logo from '../../asset/image/Logo.png';
 import XClose from '../../asset/image/x-close.png';
+import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
-function ContactUsModal({ open, onClose, onConfirm }) {
+function ContactUsModal({ open, onClose, onConfirm, setForm, form }) {
+
+  useEffect(() => {
+    console.log("useEffect=============")
+      const script = document.createElement('script');
+      script.src = 'https://embed.typeform.com/next/embed.js';
+      script.async = true;
+      document.head.appendChild(script);
+  }, [])
     
   return (
     <Dialog open={open} onClose={onClose} >
@@ -20,41 +29,11 @@ function ContactUsModal({ open, onClose, onConfirm }) {
             <div className='text-[18px] font-semibold leading-7'> Contact us today </div>
             <div className='text-[14px] font-normal leading-5 text-[#475467]'>Our sales team will contact you soon</div>
         </Dialog.Description>
-        <div className='flex flex-col gap-5 p-8'>
+        <Helmet>
+          <script src="https://embed.typeform.com/next/embed.js" />
+        </Helmet>
+        <div data-tf-widget="E66blsNY" data-tf-opacity="100" data-tf-iframe-props="title=Leadshop form" data-tf-transitive-search-params data-tf-medium="snippet" style={{width: '100%', height: '500px'}}></div>
 
-            <div className='flex flex-col gap-1'>
-              <div className='text-[#344054] text-[14px] font-medium leading-5'>Name*</div>
-              <input type='text' placeholder='Enter your name' className='border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg outline-none w-full' />
-            </div>
-
-            <div className='flex flex-col gap-1'>
-              <div className='text-[#344054] text-[14px] font-medium leading-5'>Last Name*</div>
-              <input type='text' placeholder='Enter your last name' className='border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg outline-none w-full' />
-            </div>
-
-            <div className='flex flex-col gap-1'>
-              <div className='text-[#344054] text-[14px] font-medium leading-5'>Email*</div>
-              <input type='text' placeholder='Enter your email' className='border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg outline-none w-full' />
-            </div>
-
-            <div className='flex flex-col gap-1'>
-              <div className='text-[#344054] text-[14px] font-medium leading-5'>Role*</div>
-              <input type='text' placeholder='Enter your role' className='border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg outline-none w-full' />
-            </div>
-
-            <div className='flex flex-col gap-1'>
-              <div className='text-[#344054] text-[14px] font-medium leading-5'>Company*</div>
-              <input type='text' placeholder='Enter your company' className='border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg outline-none w-full' />
-            </div>
-
-            <div className='flex flex-col gap-1'>
-              <div className='text-[#344054] text-[14px] font-medium leading-5'>Company Website*</div>
-              <input type='text' placeholder='Enter the company website' className='border border-[#D0D5DD] py-[10px] px-[14px] rounded-lg outline-none w-full' />
-            </div>
-
-            <button onClick={onConfirm} className='px-[18px] py-[10px] rounded-lg bg-[#43A046] text-[16px] text-white font-semibold leading-6 w-full'>Ok</button>
-            <button onClick={onClose} className='px-[18px] py-[10px] rounded-lg border border-[#D0D5DD] text-[16px] text-[#344054] font-semibold leading-6 w-full'>Cancel</button>
-        </div>
       </div>
     </Dialog>
   );

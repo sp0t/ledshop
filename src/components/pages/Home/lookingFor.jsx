@@ -9,6 +9,7 @@ export default function LookingFor() {
 
     const [ open, setOpen ] = useState(false);
     const [ openConfirm, setOpenConfirm ] = useState(false);
+    const [ form, setForm ] = useState();
 
     const onContactUsClicked = () => {
         setOpen(true);
@@ -29,6 +30,8 @@ export default function LookingFor() {
 
     const onOkConform = () => {
         setOpenConfirm(false);
+
+        // form.submit();
     }
 
     return (
@@ -57,7 +60,7 @@ export default function LookingFor() {
                 <img src={HomeImage} />
             </div>
 
-            <ContactUsModal open={open} onClose={onClose} onConfirm={onConfirm} />
+            <ContactUsModal open={open} onClose={onClose} onConfirm={onConfirm} setForm={setForm} form={form} />
             <ConfirmModal open={openConfirm} onClose={onCloseConfirm} onConfirm={onOkConform} />
       </div>
     )

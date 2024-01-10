@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 import LookingFor from './lookingFor';
@@ -12,20 +12,6 @@ import AboutUs from './aboutUs';
 import TryYourself from './tryYourself';
 
 const Home = () => {
-    const HomeDeskTopBack1 = {
-        backgroundImage: `url(${require('../../../asset/image/Home1_desktop.png')})`,
-        backgroundSize: 'cover', // Cover the entire div
-        backgroundPosition: 'center', // Center the image
-        width: '781px', // Example height
-        height: '670px' // Example width
-    };
-    const HomeMobileBack1 = {
-      backgroundImage: `url(${require('../../../asset/image/Home1_mobile.png')})`,
-      backgroundSize: 'cover', // Cover the entire div
-      backgroundPosition: 'center', // Center the image
-      width: '400px', // Example height
-      height: '343.15px' // Example width
-  };
 
   return (
     <div>

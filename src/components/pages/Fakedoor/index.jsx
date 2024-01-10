@@ -1,8 +1,9 @@
 
 
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom';
 import ConfirmModal from '../../modals/confirm'
+import { Helmet } from 'react-helmet';
 
 export default function Fakedoor() {
 
@@ -21,6 +22,7 @@ export default function Fakedoor() {
     }
 
     const [ open, setOpen ] = useState(false);
+    const formRef = useRef(null);
 
     const contactUsClicked = () => {
         setOpen(true);
@@ -32,20 +34,28 @@ export default function Fakedoor() {
     }
 
     const onConfirm = () => {
+        if(formRef?.current) {
+            formRef.current.submit();
+        }
         setOpen(false);
         navigate("/");
     }
+
 
     return (
         <div style={containerStyle}>
             <div className='text-white text-[64px] font-semibold leading-[76px]'>We are on our way</div>
             <div className='text-white text-[16px] font-normal leading-6'>But you can already get in contact with us</div>
             <div className='w-[491px] flex flex-col justify-center gap-[6px]'>
-                <div className='text-white font-medium leading-5 text-left'>Email*</div>
-                <div className='flex gap-2'>
-                    <input className='border border-[#D0D5DD] bg-white rounded-lg py-[10px] px-[14px] outline-none w-[335px]' placeholder='Enter your email' type='email' />
-                    <button className='py-[14px] px-[32px] bg-[#26353C] rounded text-[16px] font-medium leading-6 text-white' onClick={contactUsClicked}>Contact Us</button>
-                </div>
+                    <form id="amo_forms_1264475" ref={formRef}>
+                        <div className='flex gap-2 justify-center'>
+                            <button data-tf-popup="fK25uXR4" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Leadshop Fakedoor EN" data-tf-transitive-search-params data-tf-medium="snippet" className='py-[14px] px-[32px] bg-[#26353C] rounded text-[16px] font-medium leading-6 text-white' >Contact Us</button>
+                            <Helmet>
+                                <script src="https://embed.typeform.com/next/embed.js"></script>
+                            </Helmet>
+                        </div>
+                    </form>
+                    {/* <div id="amo_forms_1264475"></div> */}
             </div>
 
             <ConfirmModal open={open} onClose={onClose} onConfirm={onConfirm} />
