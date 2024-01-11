@@ -22,7 +22,7 @@ const Home = () => {
         <MeetTreatCoin />
         <WhoAreWe />
         <Partners />
-        <AboutUs />
+        {/* <AboutUs /> */}
         <TryYourself />
     </div>
   )

@@ -5,7 +5,6 @@ import Icon3 from '../../../asset/image/icon_3.png';
 import Icon4 from '../../../asset/image/icon_4.png';
 import Icon5 from '../../../asset/image/icon_5.png';
 import Icon6 from '../../../asset/image/icon_6.png';
-import Icon7 from '../../../asset/image/icon_7.png';
 
 export default function Partners () {
     return (
@@ -20,7 +19,6 @@ export default function Partners () {
                 <img src={ Icon4 } className='w-[48px] h-[48px]' />
                 <img src={ Icon5 } className='w-[48px] h-[48px]' />
                 <img src={ Icon6 } className='w-[48px] h-[48px]' />
-                <img src={ Icon7 } className='w-[48px] h-[48px] hidden md:block' />
             </div>
         </div>
     )
