@@ -48,14 +48,14 @@ const MenuBar = () => {
                         <a href="javascript:void(0)">
                             <img src={LogoIcon} />
                         </a>
-                        <div className="block space-x-2 md:hidden">
+                        {/* <div className="block space-x-2 md:hidden">
                             <a
                                 href="javascript:void(0)"
                                 className="px-4 py-2 font-medium text-[#26353C] text-sm hover:text-white bg-[#F5F7FA] rounded-md hover:bg-[#3E8989]"
                             >
                                 Sign up
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div>
@@ -86,7 +86,7 @@ const MenuBar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="hidden space-x-2 md:inline-block">
+                {/* <div className="hidden space-x-2 md:inline-block">
                     <a
                         href="javascript:void(0)"
                         className="px-4 py-2 font-medium text-[#26353C] text-sm hover:text-white bg-[#F5F7FA] rounded-md hover:bg-[#3E8989]"
@@ -99,7 +99,7 @@ const MenuBar = () => {
                     >
                         Sign up
                     </a>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
