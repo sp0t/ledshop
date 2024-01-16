@@ -21,7 +21,7 @@ const Home = () => {
         <TreatCoin />
         <MeetTreatCoin />
         <WhoAreWe />
-        <Partners />
+        {/* <Partners /> */}
         {/* <AboutUs /> */}
         <TryYourself />
     </div>
