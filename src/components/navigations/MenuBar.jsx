@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LogoIcon from "../../asset/image/Logo.png"
+import { Link } from 'react-scroll';
 
 const MenuBar = () => {
     const [navbar, setNavbar] = useState(false);
@@ -45,7 +46,7 @@ const MenuBar = () => {
                                 )}
                             </button>
                         </div>
-                        <a href="javascript:void(0)">
+                        <a href="/" className="hover:cursor-pointer">
                             <img src={LogoIcon} />
                         </a>
                         {/* <div className="block space-x-2 md:hidden">
@@ -65,23 +66,23 @@ const MenuBar = () => {
                         }`}
                     >
                         <ul className="font-medium text-base items-center justify-center space-y-8 gap-[15px] md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-[#18191F] hover:text-indigo-200">
-                                <a href="/">Home</a>
+                            <li className="text-[#18191F] hover:text-indigo-200 hover:cursor-pointer">
+                                <Link to="home" smooth={true} duration={500}>Home</Link>
                             </li>
-                            <li className="text-[#18191F] hover:text-indigo-200">
-                                <a href="javascript:void(0)">Service</a>
+                            <li className="text-[#18191F] hover:text-indigo-200 hover:cursor-pointer">
+                                <Link to="service" smooth={true} duration={500}>Service</Link>
                             </li>
-                            <li className="text-[#18191F] hover:text-indigo-200">
+                            {/* <li className="text-[#18191F] hover:text-indigo-200">
                                 <a href="javascript:void(0)">Feature</a>
+                            </li> */}
+                            <li className="text-[#18191F] hover:text-indigo-200 hover:cursor-pointer">
+                                <Link to="product" smooth={true} duration={500}>Product</Link>
                             </li>
-                            <li className="text-[#18191F] hover:text-indigo-200">
-                                <a href="javascript:void(0)">Product</a>
+                            <li className="text-[#18191F] hover:text-indigo-200 hover:cursor-pointer">
+                                <Link to="aboutus" smooth={true} duration={500}>About us</Link>
                             </li>
-                            <li className="text-[#18191F] hover:text-indigo-200">
-                                <a href="javascript:void(0)">Testimonial</a>
-                            </li>
-                            <li className="text-[#18191F] hover:text-indigo-200">
-                                <a href="javascript:void(0)">FAQ</a>
+                            <li className="text-[#18191F] hover:text-indigo-200 hover:cursor-pointer">
+                                <Link to="faq" smooth={true} duration={500}>FAQ</Link>
                             </li>
                         </ul>
                     </div>

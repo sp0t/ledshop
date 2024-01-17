@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
@@ -100,28 +101,28 @@ const Footer = () => {
 
                             <ul className="mt-6 space-y-3 font-normal text-sm">
                                 <li>
-                                    <a href="#" className="transition hover:opacity-75">About us</a>
+                                    <Link to='home' smooth={true} duration={500} className="transition hover:opacity-75 hover:cursor-pointer">Home</Link>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="transition hover:opacity-75">Blog</a>
+                                    <Link to='service' smooth={true} duration={500} className="transition hover:opacity-75 hover:cursor-pointer">Service</Link>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="transition hover:opacity-75">Contact us</a>
+                                    <Link to='product' smooth={true} duration={500} className="transition hover:opacity-75 hover:cursor-pointer">Product</Link>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="transition hover:opacity-75">Pricing</a>
+                                    <Link to='contactus' smooth={true} duration={500} className="transition hover:opacity-75 hover:cursor-pointer">Contact us</Link>
                                 </li>
 
                                 <li>
-                                    <a href="#" className="transition hover:opacity-75">Testimonials</a>
+                                    <Link to='faq' smooth={true} duration={500} className="transition hover:opacity-75 hover:cursor-pointer">FAQ</Link>
                                 </li>
                             </ul>
                         </div>
 
-                        <div>
+                        {/* <div>
                             <p className="font-semibold text-xl">Support</p>
 
                             <ul className="mt-6 space-y-4 font-normal text-sm">
@@ -143,7 +144,7 @@ const Footer = () => {
                                     <a href="#" className="transition hover:opacity-75">Status</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                         <div>
                             <p className="font-semibold text-xl">Stay up to date</p>
 
