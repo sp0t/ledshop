@@ -14,7 +14,7 @@ const Footer = () => {
                             All rights reserved
                         </p>
 
-                        <ul className="mt-8 flex gap-4">
+                        {/* <ul className="mt-8 flex gap-4">
                         <li>
                             <div className='rounded-full p-1.5 bg-[#3c464c] '>
                                 <a
@@ -92,7 +92,7 @@ const Footer = () => {
                                 </a>
                             </div>
                         </li>
-                        </ul>
+                        </ul> */}
                     </div>
 
                     <div className="text-left grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
