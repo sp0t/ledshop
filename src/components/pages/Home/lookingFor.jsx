@@ -37,18 +37,23 @@ export default function LookingFor() {
     return (
         <div className='flex bg-[#F5F7FA] gap-24 justify-center md:flex-nowrap flex-wrap py-[40px]'>
             <div className='md:mt-20'>
-                <div className='font-semibold text-[64px] text-left text-[#4D4D4D] leading-[75px]'>
-                    <div>Looking for</div>
-                    <div>the precise</div>
-                    <div>audience?</div>
-                    <div className='block md:flex md:gap-5'>
-                    <div>You found</div>
-                    <div>it!</div>
+                <div className='font-semibold text-[64px] text-center md:text-left text-[#4D4D4D] leading-[75px]'>
+                    <div className='block md:gap-5'>
+                        <div>Unlock</div>
+                        <div className='flex md:gap-5'>
+                            <div>Your</div>
+                            <div>Target</div>
+                        </div>
                     </div>
+                    <div className='block md:flex md:gap-5'>
+                        <div>Market </div>
+                        <div> with</div>
+                    </div>
+                    <div>Precision</div>
                 </div>
                 <div className='text-base font-normal text-left text-[#717171] mt-20 md:mt-5'>
-                    <div>Focus on your engagement and retention</div>
-                    <div>processes. We'll bring you the right leads!</div>
+                    <div>Your Ideal Audience Awaits. Leave your focus to </div>
+                    <div>your retention strategies. Dive in now!</div>
                 </div>
                 <div className='flex items-start mt-10'>
                     <button className='bg-[#26353C] text-white py-2 px-4 rounded' onClick={onContactUsClicked}>

@@ -39,7 +39,8 @@ export default function Mechanisms() {
                     <div className='text-left'>
                         <div className=" text-[64px] text-[#43A046] font-bold leading-none">5:1</div>
                         <div className='text-white text-[18px] leading-7 '>
-                            <div>LTV/CAC</div>
+                            <div>Revenue per lead / cost</div>
+                            <div>per lead</div>
                         </div>
                     </div>
                 </div>

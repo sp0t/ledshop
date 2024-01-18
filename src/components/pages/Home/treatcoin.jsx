@@ -10,7 +10,10 @@ export default function TreatCoin() {
                     TreatCoin is an environment where our users will be touched by your ads. We're bringing up new ways to teach your desired customer about your product, before he's hot enough for your call/approach.
                 </div>
                 <div className="text-[14px] font-normal">
-                    We make our users happy and engaged, while you take the best you can from our system. Simple win-win situation!
+                    We ensure our users are not just happy but deeply engaged, allowing you to extract optimal value from our system. It's a straightforward win-win situation!
+                </div>
+                <div className="text-[14px] font-normal">
+                    Unilimited leads, fitting you the way you need.
                 </div>
             </div>
 

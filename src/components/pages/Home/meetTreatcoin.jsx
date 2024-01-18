@@ -14,8 +14,8 @@ export default function MeetTreatCoin() {
                     <div> everyday</div>
                 </div>
                 <ul className=' text-white text-[14px] leading-10 font-normal items-center'>
-                    <li className="before:content-['•']">&nbsp;Our rewarding mechanisms allow us to retain the users and have them do what YOU want!</li>
-                    <li className="before:content-['•']">&nbsp;Customize what you want to ask them, and you'll receive your desired answers!</li>
+                    <li className="before:content-['•']">&nbsp;The gamified process of ads and goods consumption through TreatCoin turns the users hot enough for any desired market.</li>
+                    <li className="before:content-['•']">&nbsp;Looking for consumer behaviour analysis? Customize your surveys to forward to segmented users’ niches!</li>
                 </ul>
                 <Link to="fakedoor" className='bg-[#3E8989] px-[32px] py-[14px] rounded text-[#FFFFFF] text-[16px] leading-6 font-medium'>Learn More</Link>
             </div>
